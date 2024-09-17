@@ -11,7 +11,7 @@ const SocketContextProvider = ({ children }) => {
 
   useEffect(() => {
     if (user) {
-      const socket = io("http://localhost:5000", {
+      const socket = io("https://buzzchat-backend-88im.onrender.com", {
         query: {
           userId: user._id,
         },
