@@ -25,7 +25,7 @@ const useSignUp = () => {
     try {
       const { data } = await axios.post("/api/auth/signup", inputs);
       console.log(data);
-      if(data.error){
+      if(data.error.response.data.error){
         throw new Error(data.error)
       }
       localStorage.setItem("chat-user", JSON.stringify(data));
