@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.custom-scrollbar {
+    scrollbar-width: thin; /* Makes the scrollbar thin */
+    scrollbar-color: #888 ; /* Scrollbar thumb color and track color */
+  }
+  
+  .custom-scrollbar:hover {
+    scrollbar-color: #555 ; /* Changes thumb color on hover */
+  }
