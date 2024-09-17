@@ -1,5 +1,6 @@
 import express from "express";
-import dotenv from "dotenv";
+// import dotenv from "dotenv";
+import 'dotenv/config'
 import path from "path";
 
 import authRoutes from "./routes/auth.routes.js";
@@ -13,7 +14,7 @@ const PORT = process.env.PORT || 5000;
 
 // const __dirname = path.resolve();
 
-dotenv.config();
+// dotenv.config();
 app.use(express.json());
 app.use(cookieParser());
 
